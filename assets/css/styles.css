@@ -8,6 +8,13 @@ html {
 
 /* common */
 
+.circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFB900;
+}
+
 :root {
     --font-heading: Sen, sans-serif;
 }
@@ -42,7 +49,7 @@ a {
 
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.85;
     cursor: pointer;
 }
@@ -365,7 +372,79 @@ a {
     border-radius: 25px;
 }
 
-.card:first-of-type .order .btn{
+.card:first-of-type .order .btn {
     background: #FFB900;
 }
 
+/* Quote */
+.quote .main-content {
+    margin-top: 200px;
+    min-width: 1440px;
+    display: flex;
+    padding: 96px 135px;
+    background-color: #2E2100;
+}
+
+.quote .col-right img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+
+}
+
+.quote .col-right h2 {
+    margin-top: 18px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #F7F7F7;
+}
+
+.quote .col-right p {
+    margin-top: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #BFBCB2;
+}
+
+.quote .row {
+    margin-top: 28px;
+    display: flex;
+}
+
+.quote .circle+.circle {
+    margin-left: 6px;
+}
+
+.quote .circle:first-of-type {
+    background: #634700;
+}
+
+.quote .circle:last-of-type {
+    background: #634700;
+}
+
+.quote .col-left {
+    position: relative;
+    margin-left: 271px;
+}
+
+.quote .col-left p {
+    width: 740px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.6rem;
+    line-height: 1.53;
+    color: #FFFFFF;
+}
+
+.quote .col-left img {
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    color: #634700;
+    top: -28px;
+    left: -30px;
+}
